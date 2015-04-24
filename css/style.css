@@ -15,21 +15,23 @@
 	z-index: 1;
 }
 
-.front, .back {
+.crossfade-frame img:first-child,
+.crossfade-frame img:last-child {
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.front {
+.crossfade-frame img:first-child {
 	z-index: 2;
 }
 
-.back {
+.crossfade-frame img:last-child {
 	z-index: 1;
 }
 
-.top, .bottom {
+.slide-frame img:first-child,
+.slide-frame img:last-child {
 	display: block;
 	width: 400px;
 }
@@ -38,5 +40,5 @@
 .caption-frame p {
 	z-index: 2;
 	padding: 10px;
-	background: rgba (255,255,255,0,0.75);
+	background: rgba (255,255,255,0.75);
 }
